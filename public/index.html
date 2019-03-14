@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eat-da-burger</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</head>
+<body>
+<div class="container text-center">
+	<div class="row">
+		<div class="col-md-12 text-center" id="top-bar">
+			<img src="assets/images/burger.png" alt="burger" />
+			<h1> Eat-Da-Burger! </h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4" id="burgerListDiv"></div>
+		<div class="col-md-4" id="devourButtonDiv"></div>
+		<div class="col-md-4" id="devouredBurgerDiv"></div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center enter_section">
+			<form action="/burgers/create" method="POST">
+				<input type="text" class="form-control" name="burger_name" value="" id="enter_text">
+				<button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
+			</form>
+			<p>Enter a burger you want to eat Click the "Submit" button.</p>
+		</div>
+	</div>
+</div>
+</body>
