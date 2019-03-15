@@ -4,9 +4,6 @@ $(document).ready(function() {
     $("#burgerListDiv").empty();
     $("#devourButtonDiv").empty();
     $("#devouredBurgerDiv").empty();
-    $("#burgerListDiv").append("<h1>Uneaten Burgers</h1>");
-    $("#devourButtonDiv").append("<h1>Eat a Burger from the Left Column</h1>");
-    $("#devouredBurgerDiv").append("<h1>Eaten Burgers</h1>");
     $.get("/burgers", function(data) 
     {
 
